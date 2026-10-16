@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        //Getting input:
             System.out.println("insert first number");
             int first = sc.nextInt();
             System.out.println("insert second number");
@@ -14,7 +15,7 @@ public class Main {
             String operation = sc.next();
             char operationChar = operation.charAt(0);
 
-
+            //What operation?
             if (operationChar == '+'){
                 add(first,second);
 
@@ -29,21 +30,22 @@ public class Main {
             }
         }
 
+    // add 2 int numbers method
     public static void add (int first, int second){
         System.out.println(first + second);
 
     }
-
+    // substract 2 int numbers method
     public static void substract (int first, int second){
         System.out.println(first - second);
 
     }
-
+    // divide 2 int numbers method
     public static void divide (int first, int second){
         System.out.println(first / second);
 
     }
-
+    // 2 int numbers method
     public static void multiply (int first, int second){
         System.out.println(first * second);
 
